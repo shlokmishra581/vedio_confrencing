@@ -19,7 +19,9 @@
     "express": "^5.2.1",
     "http-status": "^2.1.0",
     "mongoose": "^9.10.2",
-    "nodemon": "^3.1.14",
     "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
