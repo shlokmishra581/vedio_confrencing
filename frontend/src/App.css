@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.landingPageContainer{
+    width: 100%;
+    height: 100vh;
+    background: url("./pages/pexels-brett-sayles-3910141.jpg") center / cover no-repeat;
+    color : white;
+}
+
+
+.landingPageContainer nav{
+    pandding-inline: 1.2rem;
+    padding-block: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landingPageContainer nav h2{
+    font-size: 1.8rem;
+    font-weight:500;
+}
+.landingPageContainer .navlist{
+    display: flex;
+    gap: 1.2rem;
+    cursor: pointer;
+
+}
+.landingPageContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-inline:  3rem;
+
+    height:80vh;
+    align-items: center; 
+}
+.landingMainContainer > div:nth-child(1){
+    
+}
+.landingMainContainer > div:nth-child(2){
+    height : 70vh;
+    width : auto;
+}
+
