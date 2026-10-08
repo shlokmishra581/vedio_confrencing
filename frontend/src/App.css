@@ -2,45 +2,74 @@ body {
     margin: 0;
 }
 
-.landingPageContainer{
+.landingPageContainer {
     width: 100%;
-    height: 100vh;
-    background: url("./pages/pexels-brett-sayles-3910141.jpg") center / cover no-repeat;
-    color : white;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 3rem;
+    background: url("./pages/Gemini_Generated_Image_lictpwlictpwlict.png") center / cover no-repeat;
+    color: rgb(238, 233, 233);
 }
 
-
-.landingPageContainer nav{
-    pandding-inline: 1.2rem;
+.landingPageContainer nav {
+    width: 100%;
+    box-sizing: border-box;
     padding-block: 1.6rem;
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 }
 
-.landingPageContainer nav h2{
+.landingPageContainer nav h2 {
     font-size: 1.8rem;
-    font-weight:500;
+    font-weight: 500;
 }
-.landingPageContainer .navlist{
-    display: flex;
-    gap: 1.2rem;
-    cursor: pointer;
 
+.landingPageContainer nav .navlist {
+    display: flex;
+    gap: 1.6rem;
+    cursor: pointer;
 }
-.landingPageContainer{
+
+.landingMainContainer {
+    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-inline:  3rem;
-
-    height:80vh;
-    align-items: center; 
-}
-.landingMainContainer > div:nth-child(1){
-    
-}
-.landingMainContainer > div:nth-child(2){
-    height : 70vh;
-    width : auto;
+    align-items: center;
+    gap: 2rem;
 }
 
+.landingMainContainer > div:first-child {
+    font-size: 1.2rem;
+
+}
+
+.landingMainContainer > div:first-child [role='button'] {
+    background: #D97500;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1.4rem;
+}
+
+.landingMainContainer > div:first-child [role='button'] a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+.landingMainContainer > div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingMainContainer img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
